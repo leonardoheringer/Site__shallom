@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap')
+body{ 
+    background-color:#ADD8E6;
+}
+#nav-bar{
+    color: black;
+    background-color:#1e8fff00;
+    opacity:100%;
+    
+   
+}
+#texto_nav{
+    color: black;
+    opacity: 100%;
+    font-family:"Epilogue";
+    font-size: x-large;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+
+}
+.navbar-nav .nav-item {
+    margin: 0 15px; /* Ajuste o espaço entre os itens conforme necessário */
+}
+
+#nav-bar1{
+    opacity: 100%;
+}
+
+#img_nav{
+    height: 65px;
+    
+
+}
+.video_inicio{
+    
+    display: flex;
+    justify-content:center;
+    align-items: top;
+   
+    
+}
+video{
+    background-color: aliceblue;
+    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+    
+}
+

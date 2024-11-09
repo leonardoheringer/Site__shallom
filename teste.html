@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps API</title>
+    <style>
+        /* Estilo para o mapa */
+        #map {
+            height: 400px; /* Altura do mapa */
+            width: 100%; /* Largura do mapa */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Meu Mapa do Google</h1>
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+            // Localização (exemplo: Brasília)
+         
+            const location = { lat: -19.470291293099972, lng:-42.5714457568501 };
+
+            // Cria o mapa
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: location,
+            });
+
+            // Adiciona um marcador
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+    </script>
+
+    <!-- Carrega a API do Google Maps com a chave da API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+
+</body>
+</html>
